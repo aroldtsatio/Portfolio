@@ -6,7 +6,7 @@ function App() {
   console.log("App.jsx");
 
   return (
-   <div className='min-h-screen flex flex-col items-center justify-center bg-blue-700"'>
+   <div className='flex flex-col items-start p-4 space-y-6 fixed top-0 left-0"'>
     <Header />
     <body className="bg-blue-200 p-4 rounded-lg shadow-md"></body>
    </div>
