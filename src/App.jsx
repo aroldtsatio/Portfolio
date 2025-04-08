@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-
+import Button from './components/Button';
 function App() {
   console.log("App.jsx");
 
@@ -11,7 +11,7 @@ function App() {
     <Header />
     <About />
     <body className="bg-blue-200  rounded-lg shadow-md"></body>
-   
+    <Button />
    </div>
   
 
