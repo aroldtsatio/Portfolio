@@ -1,3 +1,4 @@
+// App.jsx
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
@@ -8,15 +9,22 @@ function App() {
   console.log("App.jsx");
 
   return (
-   <div className='flex flex-col items-start p-3 space-y-6 top-0 left-0  flex flex-row items-start gap-6 p-6'>
-    <Header />
-    <About />
-    <Focus />
-    <body className="bg-blue-200   "></body>
-   
-   </div>
-  
-
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Colonne de gauche - Header */}
+          <div className="lg:col-span-1">
+            <Header />
+          </div>
+          
+          {/* Colonne de droite - Contenu principal */}
+          <div className="lg:col-span-2 space-y-8">
+            <About />
+            <Focus />
+          </div>
+        </div>
+      </div>
+    </div>
   );    
 }
 
