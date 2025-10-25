@@ -1,9 +1,12 @@
-// App.jsx
+
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Focus from './components/Focus';
+import Language from './components/Language';
+import Projects from './components/Projects';
+import Navbat from './components/Navba';
 
 function App() {
   console.log("App.jsx");
@@ -21,6 +24,9 @@ function App() {
           <div className="lg:col-span-2 space-y-8">
             <About />
             <Focus />
+            <Language />
+            <Projects /> 
+            <Navbat />
           </div>
         </div>
       </div>
